@@ -1,0 +1,4 @@
+.env
+.start-timestamp
+.DS_Store
+node_modules/

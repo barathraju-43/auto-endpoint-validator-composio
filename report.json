@@ -1,0 +1,943 @@
+{
+  "timestamp": "2026-03-26T13:43:18.098Z",
+  "total_endpoints": 16,
+  "results": [
+    {
+      "tool_slug": "GMAIL_LIST_MESSAGES",
+      "method": "GET",
+      "path": "/gmail/v1/users/me/messages",
+      "status": "valid",
+      "http_status_code": 200,
+      "response_summary": "GET /gmail/v1/users/me/messages returned 200.",
+      "response_body": {
+        "messages": [
+          {
+            "id": "19d2a591da9031df",
+            "threadId": "19d2a591da9031df"
+          },
+          {
+            "id": "19d2a55dba6f2b0d",
+            "threadId": "19d2a55dba6f2b0d"
+          },
+          {
+            "id": "19d2a55d501f8364",
+            "threadId": "19d2a55d501f8364"
+          },
+          {
+            "id": "19d2a551a0b89d6e",
+            "threadId": "19d2a551a0b89d6e"
+          },
+          {
+            "id": "19d2a28cb66740c9",
+            "threadId": "19d2a28cb66740c9"
+          },
+          {
+            "id": "19d29f8693c92e97",
+            "threadId": "19d29f8693c92e97"
+          },
+          {
+            "id": "19d29ce5102d6f9c",
+            "threadId": "19d29ce5102d6f9c"
+          },
+          {
+            "id": "19d28e6c3632f1a0",
+            "threadId": "19d28e6c3632f1a0"
+          },
+          {
+            "id": "19d2853ca1defd6c",
+            "threadId": "19d2853ca1defd6c"
+          },
+          {
+            "id": "19d281c1b756603a",
+            "threadId": "19d281c1b756603a"
+          },
+          {
+            "id": "19d27df00d640dea",
+            "threadId": "19d27df00d640dea"
+          },
+          {
+            "id": "19d26b831a71ed8a",
+            "threadId": "19d26b831a71ed8a"
+          },
+          {
+            "id": "19d25ff369091674",
+            "threadId": "19d25ff369091674"
+          },
+          {
+            "id": "19d25b70717295fb",
+            "threadId": "19d25b70717295fb"
+          },
+          {
+            "id": "19d257e444c64c8c",
+            "threadId": "19d257e444c64c8c"
+          },
+          {
+            "id": "19d2574f8c50dd46",
+            "threadId": "19d2574f8c50dd46"
+          },
+          {
+            "id": "19d24ef84d0fd754",
+            "threadId": "19d24ef84d0fd754"
+          },
+          {
+            "id": "19d242bf95e256f5",
+            "threadId": "19d242bf95e256f5"
+          },
+          {
+            "id": "19d23efb02ed5914",
+            "threadId": "19d23efb02ed5914"
+          },
+          {
+            "id": "19d23e93926996ac",
+            "threadId": "19d23e93926996ac"
+          }
+        ],
+        "nextPageToken": "10995788921884371365",
+        "resultSizeEstimate": 201
+      },
+      "required_scopes": [
+        "https://www.googleapis.com/auth/gmail.readonly"
+      ],
+      "available_scopes": [
+        "https://www.googleapis.com/auth/contacts.other.readonly",
+        "https://www.googleapis.com/auth/profile.language.read",
+        "https://www.googleapis.com/auth/user.phonenumbers.read",
+        "https://www.googleapis.com/auth/profile.emails.read",
+        "https://www.googleapis.com/auth/user.birthday.read",
+        "https://mail.google.com/",
+        "https://www.googleapis.com/auth/userinfo.profile",
+        "https://www.googleapis.com/auth/user.addresses.read",
+        "https://www.googleapis.com/auth/userinfo.email",
+        "https://www.googleapis.com/auth/contacts.readonly",
+        "openid",
+        "https://www.googleapis.com/auth/user.emails.read"
+      ]
+    },
+    {
+      "tool_slug": "GMAIL_GET_MESSAGE",
+      "method": "GET",
+      "path": "/gmail/v1/users/me/messages/{messageId}",
+      "status": "valid",
+      "http_status_code": 200,
+      "response_summary": "GET /gmail/v1/users/me/messages/19d2a591da9031df returned 200.",
+      "response_body": {
+        "id": "19d2a591da9031df",
+        "threadId": "19d2a591da9031df",
+        "labelIds": [
+          "UNREAD",
+          "CATEGORY_UPDATES",
+          "INBOX"
+        ],
+        "snippet": "Market tends to like new toys . . . . Relative Strength absolute but pattern also very important . . . . guided munitions . . . command and control . . . . backlog just warming up? ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌",
+        "payload": {
+          "partId": "",
+          "mimeType": "multipart/alternative",
+          "filename": "",
+          "headers": [
+            {
+              "name": "Delivered-To",
+              "value": "[redacted-email]"
+            },
+            {
+              "name": "Received",
+              "value": "by 2002:aa6:d982:0:b0:32f:1f0c:4052 with SMTP id bs2csp1205167lkb;        Thu, 26 Mar 2026 06:32:56 -0700 (PDT)"
+            },
+            {
+              "name": "X-Received",
+              "value": "by 2002:a05:620a:480b:b0:8cd:8ddd:26a3 with SMTP id af79cd13be357-8d000fc51b3mr1073313785a.48.1774531976560;        Thu, 26 Mar 2026 06:32:56 -0700 (PDT)"
+            },
+            {
+              "name": "ARC-Seal",
+              "value": "i=1; a=rsa-sha256; t=1774531976; cv=none;        d=google.com; s=arc-20240605;        b=DfmfmqeDP2oklxyI0yWVVXLnOdutQDE8h3JOFW+NvwdZA/CC4c2y5NcLMze0srgLRC         62UBCb0EGDPN+JPnKwMS8bUA+6HXveerBbmpGeEQSTyWbohEpptgHQASFtTNvTATbPtF         GGdl0JuiH1XludTIkMpmHRlGtp2AKKQaW3LwMIIWehg2qmrs+Cys1nCFtdcmIyNVTRDl         W4q+691satb5bBV2Qd5JLWvsHEoRnbEIbRLK5sN+65Bxcuw8wVIepBLYY/ZriPjrgcKo         Q1FGg7o6SIILo0DjyrD2GYC/ST/X4+vNsodaudWpZhoTdcSE4B4EHpTgOH+6/wiNx0Sj         8uCg=="
+            },
+            {
+              "name": "ARC-Message-Signature",
+              "value": "i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;        h=message-id:date:mime-version:sid:subject:reply-to         :list-unsubscribe-post:list-unsubscribe:from:feedback-id:to         :dkim-signature:dkim-signature;        bh=951EbkdDAR1isLGn0JV8NraqMj1JqdAPE0Fs4Xu9xsI=;        fh=IKUXDlc51/YY1loxhpsZ4aqDWL23XC5nQ+Vb/vnyeFg=;        b=ARFQxjNgbbptq2wAdb/Hh0I7PRD5oudwG9QNwb/+1C5Kq2vFH7UK48C/VW2QgqXiny         J6MeX+Mt/85m3evGKxMHvRdQmsdxHcMa0LK4kLXpJLKlR6AKrCT//KKvY75yIHYMY44r         QbBcDx1RBEIrOE2GEA6aHZ7mS5C9LVJBkROXHCNzIbz6u0e6avHal9u6g1yhGs3PeCQ2         xiPfPMnyb+hSiQpEVBOfEzXhtiv6nEsJedmQETrgd7y6S5K0wp9x+Uwa4jhmSG9Np3ZX         C4xr/SH8C2cAJ8wR58zX4vtWGUkZde4noZnmfb8R2zq59KWhBAN5j6ZFpAIvm6GlwqZ2         a/Zw==;        dara=google.com"
+            },
+            {
+              "name": "ARC-Authentication-Results",
+              "value": "i=1; mx.google.com;       dkim=pass header.i=@bhmta.beehiiv.com header.s=bh header.b=elg8hVyJ;       dkim=pass header.i=@mail.beehiiv.com header.s=bh header.b=e5NJSAlW;       spf=pass (google.com: domain of bounces+barathkutty7=[redacted-email] designates 69.67.186.17 as permitted sender) smtp.mailfrom=\"bounces+barathkutty7=[redacted-email]\";       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=beehiiv.com"
+            },
+            {
+              "name": "Return-Path",
+              "value": "<bounces+barathkutty7=[redacted-email]>"
+            },
+            {
+              "name": "Received",
+              "value": "from bh186-17.smtp-out.beehiivmail.net (bh186-17.smtp-out.beehiivmail.net. [69.67.186.17])        by mx.google.com with ESMTPS id af79cd13be357-8d00e388b6esi314346185a.35.2026.03.26.06.32.56        for <[redacted-email]>        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);        Thu, 26 Mar 2026 06:32:56 -0700 (PDT)"
+            },
+            {
+              "name": "Received-SPF",
+              "value": "pass (google.com: domain of bounces+barathkutty7=[redacted-email] designates 69.67.186.17 as permitted sender) client-ip=69.67.186.17;"
+            },
+            {
+              "name": "Authentication-Results",
+              "value": "mx.google.com;       dkim=pass header.i=@bhmta.beehiiv.com header.s=bh header.b=elg8hVyJ;       dkim=pass header.i=@mail.beehiiv.com header.s=bh header.b=e5NJSAlW;       spf=pass (google.com: domain of bounces+barathkutty7=[redacted-email] designates 69.67.186.17 as permitted sender) smtp.mailfrom=\"bounces+barathkutty7=[redacted-email]\";       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=beehiiv.com"
+            },
+            {
+              "name": "X-BmtaRef",
+              "value": "eyJfQF8iOiJcXF8vIiwicmVjaXBpZW50IjoiYmFyYXRoa3V0dHk3QGdtYWlsLmNvbSIsInhfbGlzdF9pZCI6Ijk0ZmFlMzU5LTcyMjYtNDZmMy05M2RlLTUyODg4OGUxODc1NSIsInhfc3Vic2NyaWJlcl9pZCI6ImZlMDA2YjVmLWMxNzAtNDQzYy1hNjVkLTNlMzgxYjg5MDdiOCJ9"
+            },
+            {
+              "name": "DKIM-Signature",
+              "value": "v=1; a=rsa-sha256; d=bhmta.beehiiv.com; s=bh; c=relaxed/relaxed; bh=951EbkdDAR1isLGn0JV8NraqMj1JqdAPE0Fs4Xu9xsI=; h=from:subject:mime-version:content-type:content-transfer-encoding:\t\tlist-unsubcribe:feedback-id:list-unsubscribe-post:reply-to:to:cc:\t\tcontent-type:feedback-id:from:subject:to; t=1774531927; b=elg8hVyJiczbE3yViOYc/jiHo7jRpuljWBQFHC9ii3SNJmH+1Kq0/PU+/Y06JWuNgz5M2JRAH TSBuumCn4+Ue9/3CsQ0uw4GBpUZcF0RajBY2afm/sqAGrcORa+aPnuJth/16B88Qd2C198TSgQG rp7bWY+x2Y/FoTRtJElMhdurfUrQvPLgY0g0dJCgLf/O/mBRXMxPLmYw5uQLiCQkyYoItWh9HhT KWwQnQzWpLs4Mb9cc+49MkWzukFdJ76SE1BuNS/a6Dah4WrsIFdg0f7chGLVUI9IzM3WAU0P5Ju 9gNqcFx1X7myzJr6Kx8UCvk3h3lF0R4JXVIn4fh6eZTA==;"
+            },
+            {
+              "name": "DKIM-Signature",
+              "value": "v=1; a=rsa-sha256; d=mail.beehiiv.com; s=bh; c=relaxed/relaxed; bh=951EbkdDAR1isLGn0JV8NraqMj1JqdAPE0Fs4Xu9xsI=; h=from:subject:mime-version:content-type:content-transfer-encoding:\t\tlist-unsubcribe:feedback-id:list-unsubscribe-post:reply-to:to:cc:\t\tcontent-type:feedback-id:from:subject:to; t=1774531927; b=e5NJSAlWN4S2waBJzl5evnL11Y+Fwr1TelOx6zyWY/wznsPgjsyam0UpM05EA7U7eOYOX8s7d f0C4821kgjyPH+xbC0/xaUl2HOSXoqbIvumq+5k1SvokMcXts0K4V5F+rr5q0ArFOrRR7R/Ng6l zT6LxX7jTEIKs94+InH0W+QSe5al2lmlpyD0msfXtZifbycLg4KAkpLZzdPiqnMBmL6IOwKeqsg K0g2/L4GjGdOkMyhhB9HhHV5rPQncGhGoD58keartCHPmGHpWVK3k8ypG49J+UxW0tgGTZPet+E TKyoTHNl02ZB5Oh/NgJKmMT1OiH15D+I+e9rsgJe2zQQ==;"
+            },
+            {
+              "name": "Received",
+              "value": "from mail.beehiiv.com by bhmta(mta8) with    HTTP id <2f652fe5291811f19e6f0affc850261d> for <[redacted-email]>;    Thu, 26 Mar 2026 13:32:07 +0000"
+            },
+            {
+              "name": "Content-Type",
+              "value": "multipart/alternative; boundary=\"xHy9QY9CSm+xFiTe/PACdg\""
+            },
+            {
+              "name": "To",
+              "value": "\"[redacted-email]\" <[redacted-email]>"
+            },
+            {
+              "name": "Feedback-ID",
+              "value": "f2160b99-eefa-42ce-8b3a-632d254efb4d:newsletter:94fae359-7226-46f3-93de-528888e18755:4cbb3b2104dae95"
+            },
+            {
+              "name": "From",
+              "value": "The Market Right Now <[redacted-email]>"
+            },
+            {
+              "name": "List-Unsubscribe",
+              "value": "<mailto:[redacted-email]>, <https://alternativeinvestments.beehiiv.com/unsubscribe/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWJzY3JpYmVyX2lkIjoiZmUwMDZiNWYtYzE3MC00NDNjLWE2NWQtM2UzODFiODkwN2I4IiwicG9zdF9pZCI6ImYyMTYwYjk5LWVlZmEtNDJjZS04YjNhLTYzMmQyNTRlZmI0ZCIsImxhc3RfcmVzb3VyY2VfZ3VpZCI6IlBvc3Q6ZjIxNjBiOTktZWVmYS00MmNlLThiM2EtNjMyZDI1NGVmYjRkIn0.3-qykctjLX7QnUVm-DAhHAkhmv1iKdDuZ_1fjfHqIsk>"
+            },
+            {
+              "name": "List-Unsubscribe-Post",
+              "value": "List-Unsubscribe=One-Click"
+            }
+          ],
+          "body": {
+            "size": 0
+          },
+          "parts": [
+            {
+              "partId": "0",
+              "mimeType": "text/plain",
+              "filename": "",
+              "headers": [
+                {
+                  "name": "Content-Type",
+                  "value": "text/plain; charset=\"utf-8\""
+                },
+                {
+                  "name": "Content-Transfer-Encoding",
+                  "value": "quoted-printable"
+                }
+              ],
+              "body": {
+                "size": 7432,
+                "data": "KipUaGlzIElzIE5vdCBJbnZlc3RtZW50IEFkdmljZSoqCgpbKioqKioqRWFybiBBbGwgRGF5IExvbmcgRG9pbmcgV2hhdCBZb3UgQXJlIEFscmVhZHkgRG9pbmcqKioqKipdKGh0dHBzOi8vd3d3LnNtaWxlc2JpdGNvaW4uY29tKQoKKipUaGUgTWFya2V0IFJpZ2h0IE5vdyAtIEFlcm9zcGFjZS9EZWZlbnNlICAqKgoKSSByZWNlbnRseSBhZGRlZCBhIG5ldyBMb25nIGRlc3BpdGUgdGhlIGN1cnJlbnQgbWFya2V0IHR1cm1vaWwgYW5kIFJpc2sgT2ZmIHBvc3R1cmUgb3ZlcmFsbC4gIEkgZGlkIHNvIHdoaWxlIGFsc28gKiptYWludGFpbmluZyBxdWl0ZSBoaWdoIGNhc2ggYmFsYW5jZXMgYW5kIGEgbG90IG9mIGZsZXhpYmlsaXR5KiouICBTb21ldGltZXMgSeKAmWxsICoqZGl2ZSBpbiB3aXRoIGEgbW9kZXN0IHBsYXkgdGhhdCBJIGNvdWxkIGVuaGFuY2UqKiBhbmQgYnVpbGQgdXAgb3ZlciB0aW1lIGRlcGVuZGluZyBvbiB0aGUgY2lyY3Vtc3RhbmNlcy4KClRoaXMgb25lIHByb3ZpZGVzIHNvbWUgZ3JlYXQgZXhhbXBsZXMgb2YgKipvdmVyYWxsIHBhdHRlcm5zKiogSSBsaWtlIHRvIHRyYWNrIGFuZCBvZiBjb3Vyc2UgKipSZWxhdGl2ZSBTdHJlbmd0aCoqLiAgTGV04oCZcyBjaGVjayBpdCBvdXQgYW5kIHNlZSB3aGF0IGlzIGdvaW5nIG9uIFJpZ2h0IE5vdy4gIAoKIyMjIDcgU3RvY2tzIHRvIEJ1eSBCZWZvcmUgU3BhY2VYIEdvZXMgUHVibGljCgpWaWV3IGltYWdlOiAoaHR0cHM6Ly9tZWRpYS5iZWVoaWl2LmNvbS9jZG4tY2dpL2ltYWdlL2ZpdD1zY2FsZS1kb3duLGZvcm1hdD1hdXRvLG9uZXJyb3I9cmVkaXJlY3QscXVhbGl0eT04MC91cGxvYWRzL2Fzc2V0L2ZpbGUvMWU3NzVjZTgtMDYyMi00ZDA1LWFjNjEtNDU2ZmJmZmIwMWM0L1NwYWNlX1N0b2Nrc18xMjAweDYwMHB4LnBuZz90PTE3NzI2NTI4MDApCkZvbGxvdyBpbWFnZSBsaW5rOiAoaHR0cDovL21hcmtldGJlYXQuY29tL25ld3NsZXR0ZXIvcGRmb2ZmZXIuYXNweD9vZmZlcj1zcGFjZXN0b2NrcyZSZWdpc3RyYXRpb25Db2RlPUJlZWhpaXYtQUc5SDRXVExKNS1zcGFjZXN0b2NrcyZfYmhpaXY9b3BwXzc2NTg0ZTZmLThlYjctNDhhZS1iNTgyLTUwNGYxODIwNGI3Yl83ZDRmODc5NyZiaGNsX2lkPWRkN2IxMTM2LWNiNzQtNDQzMS1iZjI0LTA3NmUwMDdlODk5Y19mZTAwNmI1Zi1jMTcwLTQ0M2MtYTY1ZC0zZTM4MWI4OTA3YjhfMTQzMGYwY2ItMmI5Ny00ZjE2LWFkNGEtYjAwMWVjNjIxZDUyKQpDYXB0aW9uOiAKClRoZSBzcGFjZSByYWNlIGlzbuKAmXQgc2NpZW5jZSBmaWN0aW9uIGFueW1vcmXigKYgaXTigJlzIGEgcmV2ZW51ZSBzdG9yeS4KCkxhdW5jaCBjb3N0cyBhcmUgZmFsbGluZy4gR292ZXJubWVudCBjb250cmFjdHMgYXJlIHJpc2luZy4gU2F0ZWxsaXRlIGNvbnN0ZWxsYXRpb25zIGFuZCBvcmJpdGFsIEFJIGFyZSB0dXJuaW5nIHNwYWNlIGludG8gYSBzY2FsYWJsZSBidXNpbmVzcy4KCk91ciBbNyBCZXN0IFNwYWNlIFN0b2NrcyB0byBPd24gaW4gMjAyNiByZXBvcnRdKGh0dHA6Ly9tYXJrZXRiZWF0LmNvbS9uZXdzbGV0dGVyL3BkZm9mZmVyLmFzcHg_b2ZmZXI9c3BhY2VzdG9ja3MmUmVnaXN0cmF0aW9uQ29kZT1CZWVoaWl2LUFHOUg0V1RMSjUtc3BhY2VzdG9ja3MmX2JoaWl2PW9wcF83NjU4NGU2Zi04ZWI3LTQ4YWUtYjU4Mi01MDRmMTgyMDRiN2JfN2Q0Zjg3OTcmYmhjbF9pZD1kZDdiMTEzNi1jYjc0LTQ0MzEtYmYyNC0wNzZlMDA3ZTg5OWNfZmUwMDZiNWYtYzE3MC00NDNjLWE2NWQtM2UzODFiODkwN2I4XzE0MzBmMGNiLTJiOTctNGYxNi1hZDRhLWIwMDFlYzYyMWQ1MikgcmV2ZWFscyB3aGVyZSBzbWFydCBtb25leSBjb3VsZCBmbG93IG5leHQuCgpJbnNpZGUgeW914oCZbGwgZGlzY292ZXI6CgoqIENvbXBhbmllcyBwb3dlcmluZyBsYXVuY2hlcywgc2F0ZWxsaXRlcywgZGF0YSwgZGVmZW5zZSwgYW5kIGluLXNwYWNlIGluZnJhc3RydWN0dXJlIOKAlCBwb3NpdGlvbmVkIGF0IHRoZSBjb3JlIG9mIHRoZSBtb2Rlcm4gc3BhY2UgZWNvbm9teQoKKiBDbGVhciBicmVha2Rvd25zIG9mIGhvdyBlYWNoIGJ1c2luZXNzIGFjdHVhbGx5IG1ha2VzIG1vbmV5IOKAlCBzbyB5b3XigJlyZSBpbnZlc3RpbmcgaW4gY2FzaCBmbG93LCBub3QgaHlwZQoKKiBLZXkgY2F0YWx5c3RzIGFuZCByZWQgZmxhZ3MgZm9yIDIwMjYg4oCUIGhlbHBpbmcgeW91IHdlaWdoIHVwc2lkZSBhZ2FpbnN0IHJlYWwtd29ybGQgcmlzawoKKiBJbnNpZ2h0IG9uIGEgcG90ZW50aWFsIFNwYWNlWCBvciBTdGFybGluayBJUE8g4oCUIGFuZCB3aGVyZSB0aGUgYmV0dGVyIHJpc2stcmV3YXJkIG1heSBhbHJlYWR5IGV4aXN0CgpJZiBzcGFjZSBzaGlmdHMgZnJvbSBuaWNoZSB0aGVtZSB0byBtYWluc3RyZWFtIGdyb3d0aCBzdG9yeeKApiB0aGlzIHJlcG9ydCBzaG93cyB5b3UgaG93IHRvIGJlIGVhcmx5LCBub3QgbGF0ZS4KCltHZXQgSW5zdGFudCBBY2Nlc3MgTm93XShodHRwOi8vbWFya2V0YmVhdC5jb20vbmV3c2xldHRlci9wZGZvZmZlci5hc3B4P29mZmVyPXNwYWNlc3RvY2tzJlJlZ2lzdHJhdGlvbkNvZGU9QmVlaGlpdi1BRzlINFdUTEo1LXNwYWNlc3RvY2tzJl9iaGlpdj1vcHBfNzY1ODRlNmYtOGViNy00OGFlLWI1ODItNTA0ZjE4MjA0YjdiXzdkNGY4Nzk3JmJoY2xfaWQ9ZGQ3YjExMzYtY2I3NC00NDMxLWJmMjQtMDc2ZTAwN2U4OTljX2ZlMDA2YjVmLWMxNzAtNDQzYy1hNjVkLTNlMzgxYjg5MDdiOF8xNDMwZjBjYi0yYjk3LTRmMTYtYWQ0YS1iMDAxZWM2MjFkNTIpCgoqKk1QVEkqKgoKTGV04oCZcyBzdGFydCB3aXRoIHNvbWUgcGF0dGVybnMgdGhhdCBhdHRyYWN0IG15IGF0dGVudGlvbiBhbmQgaW50cmlndWUgbWUgaW4gZ2VuZXJhbCB3aXRoIHN0b2Nrcy4gIEluIG15IHZpZXcsIGFuZCBiYXNlZCBvbiBleHBlcmllbmNlIGFuZCBJQkQgZGF0YSwgdGhlICoqbWFya2V0IHRlbmRzIHRvIHJlYWxseSBsaWtlIG5ldyBzdG9ja3Mgd2l0aCB0aGUgcG90ZW50aWFsIGZvciBleHBsb3NpdmUgZ3Jvd3RoLioqCgpNUFRJIHdl…"
+              }
+            },
+            {
+              "partId": "1",
+              "mimeType": "text/html",
+              "filename": "",
+              "headers": [
+                {
+                  "name": "Content-Type",
+                  "value": "text/html; charset=\"utf-8\""
+                },
+                {
+                  "name": "Content-Transfer-Encoding",
+                  "value": "quoted-printable"
+                }
+              ],
+              "body": {
+                "size": 50425,
+                "data": "PCFET0NUWVBFIGh0bWw-PGh0bWwgbGFuZz0iZW4iIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIiB4bWxuczp2PSJ1cm46c2NoZW1hcy1taWNyb3NvZnQtY29tOnZtbCIgeG1sbnM6bz0idXJuOnNjaGVtYXMtbWljcm9zb2Z0LWNvbTpvZmZpY2U6b2ZmaWNlIiBzdHlsZT0iZm9udC1zaXplOjE2cHg7Ij48aGVhZD48L2hlYWQ-PGhlYWQ-PG1ldGEgY2hhcnNldD0idXRmLTgiLz48IS0tW2lmICFtc29dPjwhLS0-PG1ldGEgaHR0cC1lcXVpdj0iWC1VQS1Db21wYXRpYmxlIiBjb250ZW50PSJJRT1lZGdlIi8-PCEtLTwhW2VuZGlmXS0tPjxtZXRhIG5hbWU9InZpZXdwb3J0IiBjb250ZW50PSJ3aWR0aD1kZXZpY2Utd2lkdGgsaW5pdGlhbC1zY2FsZT0xIi8-PG1ldGEgbmFtZT0ieC1hcHBsZS1kaXNhYmxlLW1lc3NhZ2UtcmVmb3JtYXR0aW5nIi8-PG1ldGEgbmFtZT0iZm9ybWF0LWRldGVjdGlvbiIgY29udGVudD0idGVsZXBob25lPW5vLGFkZHJlc3M9bm8sZW1haWw9bm8sZGF0ZT1ubyx1cmw9bm8iLz48bWV0YSBuYW1lPSJjb2xvci1zY2hlbWUiIGNvbnRlbnQ9ImxpZ2h0Ii8-PG1ldGEgbmFtZT0ic3VwcG9ydGVkLWNvbG9yLXNjaGVtZXMiIGNvbnRlbnQ9ImxpZ2h0Ii8-PHRpdGxlPk5ldyBFeHBsb3NpdmUgTG9uZyBBZGRlZCBNLXRyb24gKE1QVEkpIEJsYXN0cyBPZmYgLiAuIC4gLiBSZWxhdGl2ZSBTdHJlbmd0aCBQYXR0ZXJucyBKdW1wIE91dCAuIC4gLiAuIFdoYXQmIzM5O3MgTmV4dD8gPC90aXRsZT48IS0tW2lmIG1zb10-PHhtbD48bzpPZmZpY2VEb2N1bWVudFNldHRpbmdzPjxvOkFsbG93UE5HLz48bzpQaXhlbHNQZXJJbmNoPjk2PC9vOlBpeGVsc1BlckluY2g-PC9vOk9mZmljZURvY3VtZW50U2V0dGluZ3M-PC94bWw-PCFbZW5kaWZdLS0-PHN0eWxlPgogIDpyb290IHsgY29sb3Itc2NoZW1lOiBsaWdodDsgc3VwcG9ydGVkLWNvbG9yLXNjaGVtZXM6IGxpZ2h0OyB9CiAgYm9keSB7IG1hcmdpbjogMDsgcGFkZGluZzogMDsgbWluLXdpZHRoOiAxMDAlIWltcG9ydGFudDsgLW1zLXRleHQtc2l6ZS1hZGp1c3Q6IDEwMCUgIWltcG9ydGFudDsgLXdlYmtpdC10cmFuc2Zvcm06IHNjYWxlKDEpICFpbXBvcnRhbnQ7IC13ZWJraXQtdGV4dC1zaXplLWFkanVzdDogMTAwJSAhaW1wb3J0YW50OyAtd2Via2l0LWZvbnQtc21vb3RoaW5nOiBhbnRpYWxpYXNlZCAhaW1wb3J0YW50OyB9CiAgLmJvZHkgeyB3b3JkLXdyYXA6IG5vcm1hbDsgd29yZC1zcGFjaW5nOm5vcm1hbDsgfQogIHRhYmxlLm1zbyB7IHdpZHRoOiAxMDAlOyBib3JkZXItY29sbGFwc2U6IGNvbGxhcHNlOyBwYWRkaW5nOiAwOyB0YWJsZS1sYXlvdXQ6IGZpeGVkOyB9CiAgaW1nIHsgYm9yZGVyOiAwOyBvdXRsaW5lOiBub25lOyB9CiAgdGFibGUgeyAgbXNvLXRhYmxlLWxzcGFjZTogMHB4OyBtc28tdGFibGUtcnNwYWNlOiAwcHg7IH0KICB0ZCwgYSwgc3BhbiB7ICBtc28tbGluZS1oZWlnaHQtcnVsZTogZXhhY3RseTsgfQogICNyb290IFt4LWFwcGxlLWRhdGEtZGV0ZWN0b3JzPXRydWVdLAogIGFbeC1hcHBsZS1kYXRhLWRldGVjdG9ycz10cnVlXSwKICAjTWVzc2FnZVZpZXdCb2R5IGEgeyBjb2xvcjogaW5oZXJpdCAhaW1wb3J0YW50OyB0ZXh0LWRlY29yYXRpb246IGluaGVyaXQgIWltcG9ydGFudDsgZm9udC1zaXplOiBpbmhlcml0ICFpbXBvcnRhbnQ7IGZvbnQtZmFtaWx5OiBpbmhlcml0ICFpbXBvcnRhbnQ7IGZvbnQtd2VpZ2h0OiBpbmhlcml0ICFpbXBvcnRhbnQ7IGxpbmUtaGVpZ2h0OiBpbmhlcml0ICFpbXBvcnRhbnQ7IH0KICBzcGFuLk1zb0h5cGVybGluayB7IGNvbG9yOiBpbmhlcml0ICFpbXBvcnRhbnQ7IG1zby1zdHlsZS1wcmlvcml0eTogOTkgIWltcG9ydGFudDsgfQogIHNwYW4uTXNvSHlwZXJsaW5rRm9sbG93ZWQgeyBjb2xvcjogaW5oZXJpdCAhaW1wb3J0YW50OyBtc28tc3R5bGUtcHJpb3JpdHk6IDk5ICFpbXBvcnRhbnQ7IH0KICAuYSB7IGJhY2tncm91bmQtY29sb3I6I0ZGRkZGRjsgfQogIC5iIHsgYmFja2dyb3VuZC1jb2xvcjojMDMwNzEyOyB9CiAgLmMgIHsgYmFja2dyb3VuZC1jb2xvcjojRkZGRkZGOyB9CiAgLmQgeyBiYWNrZ3JvdW5kLWNvbG9yOiNFQUVCRUM7IH0KICAuZDIgeyBiYWNrZ3JvdW5kLWNvbG9yOiNGRkZGRkY7IH0KICAuZDMgeyBiYWNrZ3JvdW5kLWNvbG9yOiNGRkZGRkY7IH0KICBoMSBhIHsgdGV4dC1kZWNvcmF0aW9uOnVuZGVybGluZTtjb2xvcjojMEM0QTZFICFpbXBvcnRhbnQ7Zm9udC1zdHlsZTppdGFsaWM7IH0KICBoMiBhIHsgdGV4dC1kZWNvcmF0aW9uOnVuZGVybGluZTtjb2xvcjojMEM0QTZFICFpbXBvcnRhbnQ7Zm9udC1zdHlsZTppdGFsaWM7IH0KICBoMyBhIHsgdGV4dC1kZWNvcmF0aW9uOnVuZGVybGluZTtjb2xvcjojMEM0QTZFICFpbXBvcnRhbnQ7Zm9udC1zdHlsZTppdGFsaWM7IH0KICBoNCBhIHsgdGV4dC1kZWNvcmF0aW9uOnVuZGVybGluZTtjb2xvcjojMEM0QTZFICFpbXBvcnRhbnQ7Zm9udC1zdHlsZTppdGFsaWM7IH0KICBoNSBhIHsgdGV4dC1kZWNvcmF0aW9uOnVuZGVybGluZTtjb2xvcjojMEM0QTZFICFpbXBvcnRhbnQ7Zm9udC1zdHlsZTppdGFsaWM7IH0KICBoNiBhIHsgdGV4dC1kZWNvcmF0aW9uOnVuZGVybGluZTtjb2xvcjojMEM0QTZFICFpbXBvcnRhbnQ7Zm9udC1zdHlsZTppdGFsaWM7IH0KICBoMSwgaDEgYSwgaDIsIGgyIGEsIGgzLCBoMyBhLCBoNCwgaDQgYSwgaDUsIGg1IGEsIGg2LCBoNiBhLCB1bCwgbGksIG9sLCBwLCBwIGEgeyBtYXJnaW46IDA7cGFkZGluZzogMDsgfQogIGgxIHsgZm9udC1mYW1pbHk6J1RyZWJ1Y2hldCBNUycsJ0x1Y2lkYSBHcmFuZGUnLFRhaG9tYSxzYW5zLXNlcmlmO2ZvbnQtd2VpZ2h0OjQwMDtmb250LXNpemU6MjhweDtjb2xvcjojMkEyQTJBO2xpbmUtaGVpZ2h0OjQycHg7cGFkZGluZy1ib3R0b206NHB4O3BhZGRpbmctdG9wOjE2cHg7bXNvLW1hcmdpbi10b3AtYWx0OjE2cHg7bXNvLW1hcmdpbi1ib3R0b20tYWx0OjRweCB9CiAgaDIgeyBmb250LWZhbWlseTonVHJl…"
+              }
+            }
+          ]
+        },
+        "sizeEstimate": 70022,
+        "historyId": "2166420",
+        "internalDate": "1774531927000"
+      },
+      "required_scopes": [
+        "https://www.googleapis.com/auth/gmail.readonly"
+      ],
+      "available_scopes": [
+        "https://www.googleapis.com/auth/contacts.other.readonly",
+        "https://www.googleapis.com/auth/profile.language.read",
+        "https://www.googleapis.com/auth/user.phonenumbers.read",
+        "https://www.googleapis.com/auth/profile.emails.read",
+        "https://www.googleapis.com/auth/user.birthday.read",
+        "https://mail.google.com/",
+        "https://www.googleapis.com/auth/userinfo.profile",
+        "https://www.googleapis.com/auth/user.addresses.read",
+        "https://www.googleapis.com/auth/userinfo.email",
+        "https://www.googleapis.com/auth/contacts.readonly",
+        "openid",
+        "https://www.googleapis.com/auth/user.emails.read"
+      ]
+    },
+    {
+      "tool_slug": "GMAIL_SEND_MESSAGE",
+      "method": "POST",
+      "path": "/gmail/v1/users/me/messages/send",
+      "status": "valid",
+      "http_status_code": 200,
+      "response_summary": "POST /gmail/v1/users/me/messages/send returned 200.",
+      "response_body": {
+        "id": "19d2a624df740594",
+        "threadId": "19d2a624df740594",
+        "labelIds": [
+          "UNREAD",
+          "SENT",
+          "INBOX"
+        ]
+      },
+      "required_scopes": [
+        "https://www.googleapis.com/auth/gmail.send"
+      ],
+      "available_scopes": [
+        "https://www.googleapis.com/auth/contacts.other.readonly",
+        "https://www.googleapis.com/auth/profile.language.read",
+        "https://www.googleapis.com/auth/user.phonenumbers.read",
+        "https://www.googleapis.com/auth/profile.emails.read",
+        "https://www.googleapis.com/auth/user.birthday.read",
+        "https://mail.google.com/",
+        "https://www.googleapis.com/auth/userinfo.profile",
+        "https://www.googleapis.com/auth/user.addresses.read",
+        "https://www.googleapis.com/auth/userinfo.email",
+        "https://www.googleapis.com/auth/contacts.readonly",
+        "openid",
+        "https://www.googleapis.com/auth/user.emails.read"
+      ]
+    },
+    {
+      "tool_slug": "GMAIL_LIST_LABELS",
+      "method": "GET",
+      "path": "/gmail/v1/users/me/labels",
+      "status": "valid",
+      "http_status_code": 200,
+      "response_summary": "GET /gmail/v1/users/me/labels returned 200.",
+      "response_body": {
+        "labels": [
+          {
+            "id": "CHAT",
+            "name": "CHAT",
+            "messageListVisibility": "hide",
+            "labelListVisibility": "labelHide",
+            "type": "system"
+          },
+          {
+            "id": "SENT",
+            "name": "SENT",
+            "type": "system"
+          },
+          {
+            "id": "INBOX",
+            "name": "INBOX",
+            "messageListVisibility": "hide",
+            "labelListVisibility": "labelShow",
+            "type": "system"
+          },
+          {
+            "id": "IMPORTANT",
+            "name": "IMPORTANT",
+            "type": "system"
+          },
+          {
+            "id": "TRASH",
+            "name": "TRASH",
+            "messageListVisibility": "hide",
+            "labelListVisibility": "labelHide",
+            "type": "system"
+          },
+          {
+            "id": "DRAFT",
+            "name": "DRAFT",
+            "type": "system"
+          },
+          {
+            "id": "SPAM",
+            "name": "SPAM",
+            "messageListVisibility": "hide",
+            "labelListVisibility": "labelHide",
+            "type": "system"
+          },
+          {
+            "id": "CATEGORY_FORUMS",
+            "name": "CATEGORY_FORUMS",
+            "type": "system"
+          },
+          {
+            "id": "CATEGORY_UPDATES",
+            "name": "CATEGORY_UPDATES",
+            "type": "system"
+          },
+          {
+            "id": "CATEGORY_PERSONAL",
+            "name": "CATEGORY_PERSONAL",
+            "type": "system"
+          },
+          {
+            "id": "CATEGORY_PROMOTIONS",
+            "name": "CATEGORY_PROMOTIONS",
+            "type": "system"
+          },
+          {
+            "id": "CATEGORY_SOCIAL",
+            "name": "CATEGORY_SOCIAL",
+            "type": "system"
+          },
+          {
+            "id": "YELLOW_STAR",
+            "name": "YELLOW_STAR",
+            "type": "system"
+          },
+          {
+            "id": "STARRED",
+            "name": "STARRED",
+            "type": "system"
+          },
+          {
+            "id": "UNREAD",
+            "name": "UNREAD",
+            "type": "system"
+          },
+          {
+            "id": "Label_1",
+            "name": "[Imap]/Drafts",
+            "type": "user"
+          },
+          {
+            "id": "Label_2",
+            "name": "[Notion]",
+            "messageListVisibility": "hide",
+            "labelListVisibility": "labelHide",
+            "type": "user"
+          }
+        ]
+      },
+      "required_scopes": [
+        "https://www.googleapis.com/auth/gmail.labels"
+      ],
+      "available_scopes": [
+        "https://www.googleapis.com/auth/contacts.other.readonly",
+        "https://www.googleapis.com/auth/profile.language.read",
+        "https://www.googleapis.com/auth/user.phonenumbers.read",
+        "https://www.googleapis.com/auth/profile.emails.read",
+        "https://www.googleapis.com/auth/user.birthday.read",
+        "https://mail.google.com/",
+        "https://www.googleapis.com/auth/userinfo.profile",
+        "https://www.googleapis.com/auth/user.addresses.read",
+        "https://www.googleapis.com/auth/userinfo.email",
+        "https://www.googleapis.com/auth/contacts.readonly",
+        "openid",
+        "https://www.googleapis.com/auth/user.emails.read"
+      ]
+    },
+    {
+      "tool_slug": "GMAIL_GET_PROFILE",
+      "method": "GET",
+      "path": "/gmail/v1/users/me/profile",
+      "status": "valid",
+      "http_status_code": 200,
+      "response_summary": "GET /gmail/v1/users/me/profile returned 200.",
+      "response_body": {
+        "emailAddress": "[redacted-email]",
+        "messagesTotal": 19565,
+        "threadsTotal": 18792,
+        "historyId": "2166480"
+      },
+      "required_scopes": [
+        "https://www.googleapis.com/auth/gmail.readonly"
+      ],
+      "available_scopes": [
+        "https://www.googleapis.com/auth/contacts.other.readonly",
+        "https://www.googleapis.com/auth/profile.language.read",
+        "https://www.googleapis.com/auth/user.phonenumbers.read",
+        "https://www.googleapis.com/auth/profile.emails.read",
+        "https://www.googleapis.com/auth/user.birthday.read",
+        "https://mail.google.com/",
+        "https://www.googleapis.com/auth/userinfo.profile",
+        "https://www.googleapis.com/auth/user.addresses.read",
+        "https://www.googleapis.com/auth/userinfo.email",
+        "https://www.googleapis.com/auth/contacts.readonly",
+        "openid",
+        "https://www.googleapis.com/auth/user.emails.read"
+      ]
+    },
+    {
+      "tool_slug": "GMAIL_CREATE_DRAFT",
+      "method": "POST",
+      "path": "/gmail/v1/users/me/drafts",
+      "status": "valid",
+      "http_status_code": 200,
+      "response_summary": "POST /gmail/v1/users/me/drafts returned 200.",
+      "response_body": {
+        "id": "r7867749933873035062",
+        "message": {
+          "id": "19d2a62556c21ba2",
+          "threadId": "19d2a62556c21ba2",
+          "labelIds": [
+            "DRAFT"
+          ]
+        }
+      },
+      "required_scopes": [
+        "https://www.googleapis.com/auth/gmail.compose"
+      ],
+      "available_scopes": [
+        "https://www.googleapis.com/auth/contacts.other.readonly",
+        "https://www.googleapis.com/auth/profile.language.read",
+        "https://www.googleapis.com/auth/user.phonenumbers.read",
+        "https://www.googleapis.com/auth/profile.emails.read",
+        "https://www.googleapis.com/auth/user.birthday.read",
+        "https://mail.google.com/",
+        "https://www.googleapis.com/auth/userinfo.profile",
+        "https://www.googleapis.com/auth/user.addresses.read",
+        "https://www.googleapis.com/auth/userinfo.email",
+        "https://www.googleapis.com/auth/contacts.readonly",
+        "openid",
+        "https://www.googleapis.com/auth/user.emails.read"
+      ]
+    },
+    {
+      "tool_slug": "GMAIL_LIST_THREADS",
+      "method": "GET",
+      "path": "/gmail/v1/users/me/threads",
+      "status": "valid",
+      "http_status_code": 200,
+      "response_summary": "GET /gmail/v1/users/me/threads returned 200.",
+      "response_body": {
+        "threads": [
+          {
+            "id": "19d23efb02ed5914",
+            "snippet": "-switching. &nbsp; Sai is looking for early OpenClaw users to <b>test</b> it and he is giving lifetime free access for early adopters.",
+            "historyId": "2164162"
+          },
+          {
+            "id": "19d204e2ef1128ab",
+            "snippet": "GMGM, Jordan goes live tomorrow at noon ET. Build coaching, open Q&amp;A. Grab a spot here Today - a",
+            "historyId": "2163016"
+          },
+          {
+            "id": "19d201dece160439",
+            "snippet": ", and <b>test</b>. This is not AI slop… it still takes real work, but you will be leveraged with the best tools and workflows. Ideas",
+            "historyId": "2162874"
+          },
+          {
+            "id": "19d1fef02ab8261a",
+            "snippet": "nation to <b>test</b> and build it has declined, but –– imo even bigger –– as a species, we&#39;re still unable to wield electromagnetism",
+            "historyId": "2162755"
+          },
+          {
+            "id": "19d1f7c1183e186f",
+            "snippet": "AI Automation Agency Hub ( https://link.skool.com/ls/click?upn=u001.wK6x93jhdVos-2F3TofGJCJqYIach7-",
+            "historyId": "2162456"
+          }
+        ],
+        "nextPageToken": "05871307324273760843",
+        "resultSizeEstimate": 201
+      },
+      "required_scopes": [
+        "https://www.googleapis.com/auth/gmail.readonly"
+      ],
+      "available_scopes": [
+        "https://www.googleapis.com/auth/contacts.other.readonly",
+        "https://www.googleapis.com/auth/profile.language.read",
+        "https://www.googleapis.com/auth/user.phonenumbers.read",
+        "https://www.googleapis.com/auth/profile.emails.read",
+        "https://www.googleapis.com/auth/user.birthday.read",
+        "https://mail.google.com/",
+        "https://www.googleapis.com/auth/userinfo.profile",
+        "https://www.googleapis.com/auth/user.addresses.read",
+        "https://www.googleapis.com/auth/userinfo.email",
+        "https://www.googleapis.com/auth/contacts.readonly",
+        "openid",
+        "https://www.googleapis.com/auth/user.emails.read"
+      ]
+    },
+    {
+      "tool_slug": "GMAIL_TRASH_MESSAGE",
+      "method": "POST",
+      "path": "/gmail/v1/users/me/messages/{messageId}/trash",
+      "status": "valid",
+      "http_status_code": 200,
+      "response_summary": "POST /gmail/v1/users/me/messages/19d2a591da9031df/trash returned 200.",
+      "response_body": {
+        "id": "19d2a591da9031df",
+        "threadId": "19d2a591da9031df",
+        "labelIds": [
+          "UNREAD",
+          "TRASH",
+          "CATEGORY_UPDATES"
+        ]
+      },
+      "required_scopes": [
+        "https://www.googleapis.com/auth/gmail.modify"
+      ],
+      "available_scopes": [
+        "https://www.googleapis.com/auth/contacts.other.readonly",
+        "https://www.googleapis.com/auth/profile.language.read",
+        "https://www.googleapis.com/auth/user.phonenumbers.read",
+        "https://www.googleapis.com/auth/profile.emails.read",
+        "https://www.googleapis.com/auth/user.birthday.read",
+        "https://mail.google.com/",
+        "https://www.googleapis.com/auth/userinfo.profile",
+        "https://www.googleapis.com/auth/user.addresses.read",
+        "https://www.googleapis.com/auth/userinfo.email",
+        "https://www.googleapis.com/auth/contacts.readonly",
+        "openid",
+        "https://www.googleapis.com/auth/user.emails.read"
+      ]
+    },
+    {
+      "tool_slug": "GMAIL_LIST_FOLDERS",
+      "method": "GET",
+      "path": "/gmail/v1/users/me/folders",
+      "status": "invalid_endpoint",
+      "http_status_code": 404,
+      "response_summary": "GET /gmail/v1/users/me/folders returned 404.",
+      "response_body": "<!DOCTYPE html>\n<html lang=en>\n  <meta charset=utf-8>\n  <meta name=viewport content=\"initial-scale=1, minimum-scale=1, width=device-width\">\n  <title>Error 404 (Not Found)!!1</title>\n  <style>\n    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}\n  </style>\n  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>\n  <p><b>404.</b> <ins>That’s an error.</ins>\n  <p>The requested URL <code>/gmail/v1/users/me/folders</code> was not found on this server.  <ins>That’s all we know.</ins>\n",
+      "required_scopes": [
+        "https://www.googleapis.com/auth/gmail.readonly"
+      ],
+      "available_scopes": [
+        "https://www.googleapis.com/auth/contacts.other.readonly",
+        "https://www.googleapis.com/auth/profile.language.read",
+        "https://www.googleapis.com/auth/user.phonenumbers.read",
+        "https://www.googleapis.com/auth/profile.emails.read",
+        "https://www.googleapis.com/auth/user.birthday.read",
+        "https://mail.google.com/",
+        "https://www.googleapis.com/auth/userinfo.profile",
+        "https://www.googleapis.com/auth/user.addresses.read",
+        "https://www.googleapis.com/auth/userinfo.email",
+        "https://www.googleapis.com/auth/contacts.readonly",
+        "openid",
+        "https://www.googleapis.com/auth/user.emails.read"
+      ]
+    },
+    {
+      "tool_slug": "GMAIL_ARCHIVE_MESSAGE",
+      "method": "POST",
+      "path": "/gmail/v1/users/me/messages/{messageId}/archive",
+      "status": "invalid_endpoint",
+      "http_status_code": 404,
+      "response_summary": "POST /gmail/v1/users/me/messages/19d2a591da9031df/archive returned 404.",
+      "response_body": "<!DOCTYPE html>\n<html lang=en>\n  <meta charset=utf-8>\n  <meta name=viewport content=\"initial-scale=1, minimum-scale=1, width=device-width\">\n  <title>Error 404 (Not Found)!!1</title>\n  <style>\n    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}\n  </style>\n  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>\n  <p><b>404.</b> <ins>That’s an error.</ins>\n  <p>The requested URL <code>/gmail/v1/users/me/messages/19d2a591da9031df/archive</code> was not found on this server.  <ins>That’s all we know.</ins>\n",
+      "required_scopes": [
+        "https://www.googleapis.com/auth/gmail.modify"
+      ],
+      "available_scopes": [
+        "https://www.googleapis.com/auth/contacts.other.readonly",
+        "https://www.googleapis.com/auth/profile.language.read",
+        "https://www.googleapis.com/auth/user.phonenumbers.read",
+        "https://www.googleapis.com/auth/profile.emails.read",
+        "https://www.googleapis.com/auth/user.birthday.read",
+        "https://mail.google.com/",
+        "https://www.googleapis.com/auth/userinfo.profile",
+        "https://www.googleapis.com/auth/user.addresses.read",
+        "https://www.googleapis.com/auth/userinfo.email",
+        "https://www.googleapis.com/auth/contacts.readonly",
+        "openid",
+        "https://www.googleapis.com/auth/user.emails.read"
+      ]
+    },
+    {
+      "tool_slug": "GOOGLECALENDAR_LIST_EVENTS",
+      "method": "GET",
+      "path": "/calendar/v3/calendars/primary/events",
+      "status": "valid",
+      "http_status_code": 200,
+      "response_summary": "GET /calendars/primary/events returned 200. Retried after removing duplicated proxy prefix.",
+      "response_body": {
+        "kind": "calendar#events",
+        "etag": "\"p33nohkvvqmup60o\"",
+        "summary": "[redacted-email]",
+        "description": "",
+        "updated": "2026-03-26T13:29:32.728Z",
+        "timeZone": "Asia/Kolkata",
+        "accessRole": "owner",
+        "defaultReminders": [
+          {
+            "method": "popup",
+            "minutes": 30
+          }
+        ],
+        "nextSyncToken": "CO-I0__VvZMDEO-I0__VvZMDGAUgm5ftpgMom5ftpgM=",
+        "items": []
+      },
+      "required_scopes": [
+        "https://www.googleapis.com/auth/calendar.readonly"
+      ],
+      "available_scopes": [
+        "https://www.googleapis.com/auth/calendar.events",
+        "https://www.googleapis.com/auth/calendar"
+      ]
+    },
+    {
+      "tool_slug": "GOOGLECALENDAR_CREATE_EVENT",
+      "method": "POST",
+      "path": "/calendar/v3/calendars/primary/events",
+      "status": "valid",
+      "http_status_code": 200,
+      "response_summary": "POST /calendars/primary/events returned 200. Retried after removing duplicated proxy prefix.",
+      "response_body": {
+        "kind": "calendar#event",
+        "etag": "\"3549065182696446\"",
+        "id": "4rt5pfpl4iiiv7g8mibeqriags",
+        "status": "confirmed",
+        "htmlLink": "https://www.google.com/calendar/event?eid=NHJ0NXBmcGw0aWlpdjdnOG1pYmVxcmlhZ3MgYmFyYXRoa3V0dHk3QG0",
+        "created": "2026-03-26T13:43:11.000Z",
+        "updated": "2026-03-26T13:43:11.348Z",
+        "summary": "Composio endpoint validator",
+        "creator": {
+          "email": "[redacted-email]",
+          "self": true
+        },
+        "organizer": {
+          "email": "[redacted-email]",
+          "self": true
+        },
+        "start": {
+          "dateTime": "2026-03-26T20:13:10+05:30",
+          "timeZone": "UTC"
+        },
+        "end": {
+          "dateTime": "2026-03-26T21:13:10+05:30",
+          "timeZone": "UTC"
+        },
+        "iCalUID": "[redacted-email]",
+        "sequence": 0,
+        "reminders": {
+          "useDefault": true
+        },
+        "eventType": "default"
+      },
+      "required_scopes": [
+        "https://www.googleapis.com/auth/calendar.events"
+      ],
+      "available_scopes": [
+        "https://www.googleapis.com/auth/calendar.events",
+        "https://www.googleapis.com/auth/calendar"
+      ]
+    },
+    {
+      "tool_slug": "GOOGLECALENDAR_GET_EVENT",
+      "method": "GET",
+      "path": "/calendar/v3/calendars/primary/events/{eventId}",
+      "status": "valid",
+      "http_status_code": 200,
+      "response_summary": "GET /calendars/primary/events/4rt5pfpl4iiiv7g8mibeqriags returned 200. Retried after removing duplicated proxy prefix.",
+      "response_body": {
+        "kind": "calendar#event",
+        "etag": "\"3549065182696446\"",
+        "id": "4rt5pfpl4iiiv7g8mibeqriags",
+        "status": "confirmed",
+        "htmlLink": "https://www.google.com/calendar/event?eid=NHJ0NXBmcGw0aWlpdjdnOG1pYmVxcmlhZ3MgYmFyYXRoa3V0dHk3QG0",
+        "created": "2026-03-26T13:43:11.000Z",
+        "updated": "2026-03-26T13:43:11.348Z",
+        "summary": "Composio endpoint validator",
+        "creator": {
+          "email": "[redacted-email]",
+          "self": true
+        },
+        "organizer": {
+          "email": "[redacted-email]",
+          "self": true
+        },
+        "start": {
+          "dateTime": "2026-03-26T20:13:10+05:30",
+          "timeZone": "UTC"
+        },
+        "end": {
+          "dateTime": "2026-03-26T21:13:10+05:30",
+          "timeZone": "UTC"
+        },
+        "iCalUID": "[redacted-email]",
+        "sequence": 0,
+        "reminders": {
+          "useDefault": true
+        },
+        "eventType": "default"
+      },
+      "required_scopes": [
+        "https://www.googleapis.com/auth/calendar.readonly"
+      ],
+      "available_scopes": [
+        "https://www.googleapis.com/auth/calendar.events",
+        "https://www.googleapis.com/auth/calendar"
+      ]
+    },
+    {
+      "tool_slug": "GOOGLECALENDAR_LIST_CALENDARS",
+      "method": "GET",
+      "path": "/calendar/v3/users/me/calendarList",
+      "status": "valid",
+      "http_status_code": 200,
+      "response_summary": "GET /users/me/calendarList returned 200. Retried after removing duplicated proxy prefix.",
+      "response_body": {
+        "kind": "calendar#calendarList",
+        "etag": "\"p337sbok6r6up60o\"",
+        "nextSyncToken": "CM_F4obZvZMDEhZiYXJhdGhrdXR0eTdAZ21haWwuY29t",
+        "items": [
+          {
+            "kind": "calendar#calendarListEntry",
+            "etag": "\"1760441358515151\"",
+            "id": "[redacted-email]",
+            "summary": "👶 @TheJuniorPunks NFT Updates🚀",
+            "timeZone": "UTC",
+            "colorId": "11",
+            "backgroundColor": "#fbe983",
+            "foregroundColor": "#000000",
+            "selected": true,
+            "accessRole": "reader",
+            "defaultReminders": [],
+            "conferenceProperties": {
+              "allowedConferenceSolutionTypes": [
+                "hangoutsMeet"
+              ]
+            }
+          },
+          {
+            "kind": "calendar#calendarListEntry",
+            "etag": "\"1762253761335487\"",
+            "id": "[redacted-email]",
+            "summary": "Family",
+            "timeZone": "UTC",
+            "dataOwner": "[redacted-email]",
+            "colorId": "22",
+            "backgroundColor": "#f691b2",
+            "foregroundColor": "#000000",
+            "selected": true,
+            "accessRole": "owner",
+            "defaultReminders": [
+              {
+                "method": "popup",
+                "minutes": 30
+              }
+            ],
+            "conferenceProperties": {
+              "allowedConferenceSolutionTypes": [
+                "hangoutsMeet"
+              ]
+            }
+          },
+          {
+            "kind": "calendar#calendarListEntry",
+            "etag": "\"1762253762890703\"",
+            "id": "[redacted-email]",
+            "summary": "[redacted-email]",
+            "timeZone": "Asia/Kolkata",
+            "colorId": "17",
+            "backgroundColor": "#9a9cff",
+            "foregroundColor": "#000000",
+            "selected": true,
+            "accessRole": "owner",
+            "defaultReminders": [
+              {
+                "method": "popup",
+                "minutes": 30
+              }
+            ],
+            "notificationSettings": {
+              "notifications": [
+                {
+                  "type": "eventCreation",
+                  "method": "email"
+                },
+                {
+                  "type": "eventChange",
+                  "method": "email"
+                },
+                {
+                  "type": "eventCancellation",
+                  "method": "email"
+                },
+                {
+                  "type": "eventResponse",
+                  "method": "email"
+                }
+              ]
+            },
+            "primary": true,
+            "conferenceProperties": {
+              "allowedConferenceSolutionTypes": [
+                "hangoutsMeet"
+              ]
+            }
+          },
+          {
+            "kind": "calendar#calendarListEntry",
+            "etag": "\"1762253765270863\"",
+            "id": "en.indian#[redacted-email]",
+            "summary": "Holidays in India",
+            "description": "Holidays and Observances in India",
+            "timeZone": "Asia/Kolkata",
+            "summaryOverride": "Holidays in India",
+            "colorId": "17",
+            "backgroundColor": "#9a9cff",
+            "foregroundColor": "#000000",
+            "selected": true,
+            "accessRole": "reader",
+            "defaultReminders": [],
+            "conferenceProperties": {
+              "allowedConferenceSolutionTypes": [
+                "hangoutsMeet"
+              ]
+            }
+          }
+        ]
+      },
+      "required_scopes": [
+        "https://www.googleapis.com/auth/calendar.readonly"
+      ],
+      "available_scopes": [
+        "https://www.googleapis.com/auth/calendar.events",
+        "https://www.googleapis.com/auth/calendar"
+      ]
+    },
+    {
+      "tool_slug": "GOOGLECALENDAR_DELETE_EVENT",
+      "method": "DELETE",
+      "path": "/calendar/v3/calendars/primary/events/{eventId}",
+      "status": "valid",
+      "http_status_code": 204,
+      "response_summary": "DELETE /calendars/primary/events/4rt5pfpl4iiiv7g8mibeqriags returned 204. Retried after removing duplicated proxy prefix.",
+      "response_body": "",
+      "required_scopes": [
+        "https://www.googleapis.com/auth/calendar.events"
+      ],
+      "available_scopes": [
+        "https://www.googleapis.com/auth/calendar.events",
+        "https://www.googleapis.com/auth/calendar"
+      ]
+    },
+    {
+      "tool_slug": "GOOGLECALENDAR_LIST_REMINDERS",
+      "method": "GET",
+      "path": "/calendar/v3/calendars/primary/reminders",
+      "status": "invalid_endpoint",
+      "http_status_code": 404,
+      "response_summary": "GET /calendars/primary/reminders returned 404. Retried after removing duplicated proxy prefix.",
+      "response_body": "<!DOCTYPE html>\n<html lang=en>\n  <meta charset=utf-8>\n  <meta name=viewport content=\"initial-scale=1, minimum-scale=1, width=device-width\">\n  <title>Error 404 (Not Found)!!1</title>\n  <style>\n    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}\n  </style>\n  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>\n  <p><b>404.</b> <ins>That’s an error.</ins>\n  <p>The requested URL <code>/calendar/v3/calendars/primary/reminders</code> was not found on this server.  <ins>That’s all we know.</ins>\n",
+      "required_scopes": [
+        "https://www.googleapis.com/auth/calendar.readonly"
+      ],
+      "available_scopes": [
+        "https://www.googleapis.com/auth/calendar.events",
+        "https://www.googleapis.com/auth/calendar"
+      ]
+    }
+  ],
+  "summary": {
+    "valid": 13,
+    "invalid_endpoint": 3,
+    "insufficient_scopes": 0,
+    "error": 0
+  }
+}
