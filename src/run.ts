@@ -1,7 +1,7 @@
 import { Composio } from "@composio/core";
 import endpoints from "./endpoints.json";
 import { runAgent } from "./agent";
-import type { EndpointDefinition, TestReport } from "./types";
+import type { EndpointDefinition, EndpointStatus, TestReport } from "./types";
 
 /**
  * Runner script — do NOT modify this file.
@@ -33,6 +33,12 @@ function validateReport(
   inputEndpoints: EndpointDefinition[]
 ): string[] {
   const errors: string[] = [];
+  const validStatuses: EndpointStatus[] = [
+    "valid",
+    "invalid_endpoint",
+    "insufficient_scopes",
+    "error",
+  ];
 
   if (!report.timestamp) {
     errors.push("Missing timestamp");
@@ -54,12 +60,6 @@ function validateReport(
   }
 
   for (const result of report.results) {
-    const validStatuses = [
-      "valid",
-      "invalid_endpoint",
-      "insufficient_scopes",
-      "error",
-    ];
     if (!validStatuses.includes(result.status)) {
       errors.push(
         `Invalid status "${result.status}" for ${result.tool_slug}. Must be one of: ${validStatuses.join(", ")}`
@@ -94,7 +94,7 @@ async function main() {
   console.log("Running agent...\n");
   const startTime = Date.now();
 
-  const report = await runAgent({
+  const report: TestReport = await runAgent({
     composio,
     connectedAccountId: CONNECTED_ACCOUNT_ID,
     endpoints: allEndpoints,
